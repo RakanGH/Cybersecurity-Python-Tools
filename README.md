@@ -1,16 +1,18 @@
-# Website Scanner
-A lightweight Python script to measure execution time and task duration.
+# 🛠️ Network Port Scanner
+A Python-based CLI tool designed to perform TCP port discovery on local or remote targets.
 
-## Features
-* Precise timing using the `time` library.
-* Ubuntu-compatible.
+## 🚀 Features
+* **Interactive Target Input:** Scan any Domain or IP address.
+* **Well-Known Port Range:** Automatically scans ports 1 through 1024.
+* **TCP Handshake Logic:** Uses the `socket` library to detect open services.
+* **Performance Tracking:** Reports the total time taken for the scan.
 
-## How to Run
-1. Clone the repo:
-   `git clone https://github.com/YOUR_USER/YOUR_REPO.git`
-2. Run the script:
-   `python3 scanner.py`
+## 🛠️ Requirements
+* Python 3.x
+* Ubuntu / Linux / Windows / macOS
 
-## Upcoming Upgrades
-* Integration with the `requests` library to test live website status.
-* Performance benchmarking.
+## 🖥️ How to Use
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/RakanGH/Scanner.git](https://github.com/RakanGH/Scanner.git)
+   cd Scanner
