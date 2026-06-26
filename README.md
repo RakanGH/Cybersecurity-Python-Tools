@@ -1,18 +1,32 @@
-# 🛠️ Network Port Scanner
-A Python-based CLI tool designed to perform TCP port discovery on local or remote targets.
+# Cybersecurity Python Toolkit
 
-## 🚀 Features
-* **Interactive Target Input:** Scan any Domain or IP address.
-* **Well-Known Port Range:** Automatically scans ports 1 through 1024.
-* **TCP Handshake Logic:** Uses the `socket` library to detect open services.
-* **Performance Tracking:** Reports the total time taken for the scan.
+A collection of practical, hands-on Python scripts developed to explore and apply core cybersecurity concepts. This repository serves as a personal toolkit for security automation, networking, and monitoring.
 
-## 🛠️ Requirements
-* Python 3.x
-* Ubuntu / Linux / Windows / macOS
+---
 
-## 🖥️ How to Use
-1. **Clone the repository:**
+## 🛠️ Included Tools
+
+### 1. File Integrity Monitor (FIM)
+A script designed to monitor the integrity of critical system files locally.
+* **How it works:** It establishes a baseline by calculating the unique **SHA-256 hash** of a user-specified file. It then runs a continuous loop to check the file every few seconds and triggers real-time alerts if the file is **modified** or **deleted**.
+* **File:** `file_monitor.py`
+
+### 2. Network Port Scanner
+A lightweight network tool built to identify active services on a target host.
+* **How it works:** Utilizing Python's native `socket` library, it attempts to connect to specified ports on a target IP address to determine if they are open or closed.
+* **File:** `scanner.py`
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository or open the project in PyCharm.
+2. Ensure you have Python 3 installed.
+3. Open your terminal and navigate to the project directory.
+4. Run the desired tool:
    ```bash
-   git clone [https://github.com/RakanGH/Scanner.git](https://github.com/RakanGH/Scanner.git)
-   cd Scanner
+   # To run the File Integrity Monitor
+   python3 file_monitor.py
+
+   # To run the Port Scanner
+   python3 scanner.py
