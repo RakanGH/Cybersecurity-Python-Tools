@@ -16,6 +16,11 @@ A lightweight network tool built to identify active services on a target host.
 * **How it works:** Utilizing Python's native `socket` library, it attempts to connect to specified ports on a target IP address to determine if they are open or closed.
 * **File:** `scanner.py`
 
+### 3. Log Parser & Analyzer
+A local log analysis script modeled after core SIEM functions to detect potential threats.
+* **How it works:** It opens and reads server log files line by line, filtering for critical keywords like **CRITICAL** or **Failed**. It provides real-time alerts upon discovery and generates an automated summary report counting total security events.
+* **File:** `log_parser.py`
+
 ---
 
 ## 🚀 How to Run
@@ -30,3 +35,6 @@ A lightweight network tool built to identify active services on a target host.
 
    # To run the Port Scanner
    python3 scanner.py
+
+   # To run the Log Parser
+   python3 log_parser.py
