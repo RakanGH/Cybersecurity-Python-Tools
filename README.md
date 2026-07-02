@@ -14,8 +14,12 @@ A script designed to monitor the integrity of critical system files locally.
 A lightweight network tool built to identify active services on a target host.
 * **File:** `scanner.py`
 
-### 3. Log Parser & Analyzer
-A local log analysis script modeled after core SIEM functions to detect potential threats.
+### 3. Advanced Log Parser & Analyzer
+A smart automation script designed to scan server and system logs for potential security threats.
+* **Key Features:**
+  * **Smart Paths:** Accepts both local file names and full system paths (like `/var/log/auth.log`).
+  * **Deep Scan:** Searches for multiple high-risk keywords (`CRITICAL`, `FAILED`, `ERROR`, `WARNING`) regardless of case sensitivity.
+  * **Auto-Reporting:** Generates a unique, timestamped text report for every run to preserve history without overwriting previous logs.
 * **File:** `log_parser.py`
 
 ### 4. SHA-256 Hash Cracker
